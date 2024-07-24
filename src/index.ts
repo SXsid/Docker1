@@ -23,5 +23,15 @@ app.get("/",(req,res)=>{
         msg:"chnga ji!"
     })
 })
+app.get("/user",(req,res)=>{
+    res.json({
+        msg:"nya h ji!!"
+    })
+})
+app.get("/user/aman",(req,res)=>{  //changed so can test the layerings (
+    res.json({
+        msg:"nya h ji!!"
+    })
+})
 
 app.listen(3000)
